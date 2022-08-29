@@ -11,10 +11,4 @@ E-commerce com Frontend, Backend e Banco de Dados para o módulo de Testes Autom
 ### ⚙️ Funcionalidades
 - [] 
 
-<<<<<<< HEAD
 ### 😈 :blue_book: Em processo...
-
-:D
-=======
-### 🔜 Em processo...
-
