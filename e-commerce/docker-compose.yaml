@@ -1,0 +1,26 @@
+version: "v3.8"
+
+services:
+  
+  meu_app:
+    build: .
+    image: meu_app:latest 
+    ports:
+      - 3000:3000
+    environment:
+      PORT: 3000
+      MONGO_URL: mongodb://root:1234@meu_mongodb:27017/meu_mongodb
+    depends_on:
+      - meu_mongodb
+
+  meu_mongodb:
+    image: mongo
+    expose: 
+      - 27017
+    ports:
+      - 27017:27017
+    volumes:
+      - C:\Users\natal\Documents\Lets Code\Web Full Stack\Testes Automatizados\e-commerce\mongodata:\data\db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: '1234'
